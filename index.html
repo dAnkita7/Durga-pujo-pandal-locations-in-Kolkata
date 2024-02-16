@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Alkatra' rel='stylesheet'>
+    <title>EX-1</title>
+    
+<style>
+
+body{
+    background-color: rgb(0, 0, 0);
+   
+ 
+}
+
+
+
+.left{
+
+display: inline-block;
+position: absolute;
+left: 20px;
+top: 10px;
+color: rgb(111, 107, 134);
+
+}
+
+.center{
+
+display: inline-block;
+position: absolute;
+left: 250px;
+right: 150px;
+top: 7px;
+color: rgb(111, 107, 134);
+
+}
+
+.right{
+
+display: inline-block;
+position: absolute;
+right: 20px;
+top: 10px;
+color: rgb(111, 107, 134);
+
+
+}
+
+.navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: rgb(111, 107, 134);
+        text-decoration: none;
+        padding: 15px 30px;
+
+    }
+
+    .navbar li a:hover{
+        background-color: rgba(41, 33, 78,0.4) ;
+    }
+    .navbar li a.active {
+        /* text-decoration: underline; */
+        color: grey;
+
+    }
+/* 
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: rgb(111, 107, 134);
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    } */
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+
+    .img{
+    width: 75%;
+    height: 500px;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    
+    }
+
+    
+
+.box{
+    display: inline-block;
+    position: absolute;
+    /* border: 2px solid rgb(0, 0, 0); */
+    
+    width: 1325px;
+    height: 530px;
+    margin-top: 54px;
+    
+}
+
+.box1{
+    display: inline-block;
+    position: absolute;
+    /* border: 2px solid rgb(224, 93, 93); */
+    width:390px;
+    height: 530px;
+    margin-top: 33px;
+    margin-left: 940px;
+    
+}
+
+.box2{
+    display: inline-block;
+    position: absolute;
+    /* border: 2px solid rgb(0, 0, 0); */
+    width:93%;
+    height: 9px;
+    margin-top: 555px;
+    margin-left: 0px;
+    
+}
+
+.box3{
+    display: inline-block;
+    position: absolute;
+    /* border: 2px solid rgb(0, 0, 0); */
+    width:93%;
+    height: 270px;
+    margin-top: 660px;
+    margin-left: 0px;
+    
+}
+
+#text{
+    color: rgb(255, 255, 255);
+    font-family: 'Alkatra';
+    /* text-align: center; */
+    font-size: 100px;
+    font-weight: 2000;
+     letter-spacing: 2px;
+     word-spacing: 2px;
+     line-height: 40px;
+ }
+
+ #text1{
+    color: rgb(129, 88, 88);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 40px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 1000;
+     letter-spacing: 1.5px;
+     word-spacing: 2px;
+     line-height: 25px;
+ }
+
+ #text2{
+    color: rgb(77, 52, 52);
+    font-family: 'Times New Roman', Times, serif;
+    padding: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    line-height: 25px;
+    text-align: justify;
+    text-indent: 50px;
+ }
+
+</style>
+</head>
+
+
+<body>
+    <header>
+ 
+    
+    <div class="center">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="ritual_final.html">Mythology & Ritual</a></li>
+            <li><a href="#">Roadmap</a></li>
+            <li><a href="#">Gallary</a></li>
+        </ul>
+    </div>
+
+    <!-- <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+    </div> -->
+
+</header>
+
+     <div class="box">
+    <img class='img'src="image11.jpg" alt="reload">
+     </div>
+
+    <div class="box1" id="text">
+        <br>
+        <br>
+        <br>
+        মা 
+       <br>
+       <br>
+       <br>
+        আসছে ...
+        <br>
+       </div>
+
+    <div class="box2" id="text1">
+        PUJO COUNTDOWN :: <span id="demo"> </span>
+       
+
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Oct 21, 2023 00:00:00").getTime();
+            
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+            
+              // Get today's date and time
+              var now = new Date().getTime();
+                
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+                
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+              // Output the result in an element with id="demo"
+              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+                
+              // If the count down is over, write some text 
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script>
+       
+            
+    </div>
+
+    <div class="box3" id="text2">
+        Durga Puja is an annual festival celebrated in
+        September or October, most notably in Kolkata, 
+        in West Bengal of India, but also in other parts 
+        of India and amongst the Bengali diaspora. It 
+        marks the ten-day worship of the Hindu mother-goddess
+        Durga. In the months preceding the festival, small 
+        artisanal workshops sculpt images of Durga and her 
+        family using unfired clay pulled from the Ganga River. 
+        The worship of the goddess then begins on the inaugural 
+        day of Mahalaya, when eyes are painted onto the clay 
+        images to bring the goddess to life. It ends on the 
+        tenth day, when the images are immersed in the river 
+        from where the clay came. Thus, the festival has also 
+        come to signify ‘home-coming’ or a seasonal return to
+         one’s roots. Durga Puja is seen as the best instance
+          of the public performance of religion and art, and 
+          as a thriving ground for collaborative artists and 
+          designers. The festival is characterized by large-scale
+          installations and pavilions in urban areas, as well 
+          as by traditional Bengali drumming and veneration of 
+          the goddess. During the event, the divides of class, 
+          religion and ethnicities collapse as crowds of spectators
+          walk around to admire the installations.
+
+
+    </div>
+ 
+    
+    
+</body>
+</html>
